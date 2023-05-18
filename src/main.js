@@ -1,8 +1,9 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
-import './styles/style.css'
+import InfiniteAjaxScroll from '@webcreate/infinite-ajax-scroll'
 
-console.log('Welcome to Vite + JS + Webflow!')
-
-createBadge()
-animateTitle()
+new InfiniteAjaxScroll('.infinite-wrap', {
+  item: '.main-content-container',
+  next: '.infinite-next',
+  prev: '.infinite-prev',
+  pagination: '.infinite-pagination',
+  negativeMargin: 400,
+})
